@@ -1,0 +1,181 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Antonio"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Spartan"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="images/planet-earth.svg" />
+    <title>Planets Facts Site</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h3>THE PLANETS</h3>
+      <div class="planets">
+        <button
+          onclick="planet_click(this)"
+          onmouseover="planet_hover(this)"
+          onmouseleave="planet_leave(this)"
+        >
+          MERCURY
+        </button>
+        <button
+          onclick="planet_click(this)"
+          onmouseover="planet_hover(this)"
+          onmouseleave="planet_leave(this)"
+        >
+          VENUS
+        </button>
+        <button
+          onclick="planet_click(this)"
+          onmouseover="planet_hover(this)"
+          onmouseleave="planet_leave(this)"
+        >
+          EARTH
+        </button>
+        <button
+          onclick="planet_click(this)"
+          onmouseover="planet_hover(this)"
+          onmouseleave="planet_leave(this)"
+        >
+          MARS
+        </button>
+        <button
+          onclick="planet_click(this)"
+          onmouseover="planet_hover(this)"
+          onmouseleave="planet_leave(this)"
+        >
+          JUPITER
+        </button>
+        <button
+          onclick="planet_click(this)"
+          onmouseover="planet_hover(this)"
+          onmouseleave="planet_leave(this)"
+        >
+          SATURN
+        </button>
+        <button
+          onclick="planet_click(this)"
+          onmouseover="planet_hover(this)"
+          onmouseleave="planet_leave(this)"
+        >
+          URANUS
+        </button>
+        <button
+          onclick="planet_click(this)"
+          onmouseover="planet_hover(this)"
+          onmouseleave="planet_leave(this)"
+        >
+          NEPTUNE
+        </button>
+      </div>
+      <a href="#" class="toggle_button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="17">
+          <g fill="#FFF" fill-rule="evenodd">
+            <path d="M0 0h24v3H0zM0 7h24v3H0zM0 14h24v3H0z"></path>
+          </g>
+        </svg>
+      </a>
+    </header>
+    <section class="mobile_header">
+      <button class="overview">OVERVIEW</button>
+      <button class="structure">STRUCTURE</button>
+      <button class="surface">SURFACE</button>
+    </section>
+    <section class="drop_down drop">
+      <button onclick="planet_click(this)">MERCURY</button>
+      <button onclick="planet_click(this)">VENUS</button>
+      <button onclick="planet_click(this)">EARTH</button>
+      <button onclick="planet_click(this)">MARS</button>
+      <button onclick="planet_click(this)">JUPITER</button>
+      <button onclick="planet_click(this)">SATURN</button>
+      <button onclick="planet_click(this)">URANUS</button>
+      <button onclick="planet_click(this)">NEPTUNE</button>
+    </section>
+    <main>
+      <div class="first">
+        <div class="image_part">
+          <img
+            class="first_img"
+            src="images/planet-mercury.svg"
+            alt="Image of mercury"
+          />
+          <img
+            class="surface_img ss"
+            src="images/planet-mercury-geology.png"
+            alt="Surface image"
+          />
+        </div>
+        <div class="desc">
+          <div class="first_desc">
+            <h2>MERCURY</h2>
+            <p class="description">
+              Mercury is the smallest planet in the Solar System and the closest
+              to the Sun. Its orbit around the Sun takes 87.97 Earth days, the
+              shortest of all the Sun's planets. Mercury is one of four
+              terrestrial planets in the Solar System, and is a rocky body like
+              Earth.
+            </p>
+            <p class="source">Source:</p>
+            <a
+              class="line"
+              href=" https://en.wikipedia.org/wiki/Mercury_(planet)"
+              target="_blank"
+              >Wikipedia
+            </a>
+          </div>
+          <div class="desc_buttons">
+            <button
+              class="overview"
+              onmouseover="hover(this)"
+              onmouseleave="hover_leave(this)"
+            >
+              <p class="num">01</p>
+              <p class="button_desc">OVERVIEW</p>
+            </button>
+            <button
+              class="structure"
+              onmouseover="hover(this)"
+              onmouseleave="hover_leave(this)"
+            >
+              <p class="num">02</p>
+              <p class="button_desc">INTERNAL STRUCTURE</p>
+            </button>
+            <button
+              class="surface"
+              onmouseover="hover(this)"
+              onmouseleave="hover_leave(this)"
+            >
+              <p class="num">03</p>
+              <p class="button_desc">SURFACE GEOLOGY</p>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="second">
+        <div class="one">
+          <p class="dd">ROTATION TIME</p>
+          <p class="days a">58.6 DAYS</p>
+        </div>
+        <div class="one">
+          <p class="dd">REVOLUTION TIME</p>
+          <p class="days b">87.97 DAYS</p>
+        </div>
+        <div class="one">
+          <p class="dd">RADIUS</p>
+          <p class="days c">2,439 KM</p>
+        </div>
+        <div class="one">
+          <p class="dd">AVERAGE TEMP</p>
+          <p class="days d">430&deg; C</p>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
