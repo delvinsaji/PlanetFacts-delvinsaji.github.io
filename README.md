@@ -1,0 +1,1 @@
+It is a Website about the different planets of our solar systems created using HTML, CSS and Javascript. The website is responsive with different layouts provided for mobile, tablet and desktop devices.
